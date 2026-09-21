@@ -20,16 +20,17 @@ window.PORTFOLIO = {
     { title: "AI engineering", subtitle: "Taking models beyond the notebook.", icon: "code", number: "02", tags: ["Python", "FastAPI", "Docker", "AWS", "Git / GitHub", "Model deployment", "Faster-Whisper"], note: "Built to work in the real world." },
     { title: "Data & automation", subtitle: "Connecting information to action.", icon: "layers", number: "03", tags: ["Data Engineering", "Pandas", "BeautifulSoup", "ETL pipelines", "Power Automate", "SharePoint", "Microsoft Forms"], note: "Less repetition. More possibility." },
   ],
-  // Card illustrations represent each project; they are not application screenshots.
+  // Projects can use an uploaded screenshot or an original illustration.
   projects: [
     {
       id: "farmer", name: "Farmer RAG Agent",
       subtitle: "Trusted farming knowledge. Context-aware answers.",
       category: "Language AI", type: "Agricultural AI assistant", visual: "farmer",
+      image: "./assets/farmer-rag-agent.jpeg",
+      imageAlt: "Farmer RAG Agent chat interface answering agricultural questions about livestock management.",
       tags: ["LangGraph", "FAISS", "Hugging Face", "Groq", "FastAPI", "RAGAS", "Python"], featured: true,
       description: "An AI-powered agricultural assistant that retrieves trusted farming knowledge and generates context-aware answers.",
       caseStudy: {
-        role: "AI/ML Engineer",
         outcomes: [
           { title: "Semantic Retrieval", detail: "Implemented vector-based retrieval using FAISS and Hugging Face embeddings." },
           { title: "Grounded Generation", detail: "Built a RAG workflow that answers questions using retrieved agricultural context." },

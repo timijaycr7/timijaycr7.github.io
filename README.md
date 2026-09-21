@@ -22,11 +22,11 @@ Edit **`assets/content.js`** to change your profile, skills, projects, experienc
 
 - Your three selected GitHub projects, four roles, GitHub profile, and email are already included.
 - Projects: [Farmer RAG Agent](https://github.com/timijaycr7/farmer-rag-agent), [Speech-to-Text AI](https://github.com/timijaycr7/speech-to-text-ai), and [Malaria Parasite Classification & Stage Detection](https://github.com/timijaycr7/Malaria-Parasite-Classification-Stage-Detection). Descriptions combine repository review with owner-provided case-study details; each project dialog links to its source repository.
-- The Farmer RAG Agent's `caseStudy` contains the role, engineering outcomes, problem, solution, architecture, contributions, and evaluation criteria. Its provider is Groq. Engineering outcomes describe implemented capabilities; add benchmark figures only when supported by verified measurements and evaluation context.
+- The Farmer RAG Agent's `caseStudy` contains engineering outcomes, problem, solution, architecture, contributions, and evaluation criteria. Its provider is Groq. Engineering outcomes describe implemented capabilities; add benchmark figures only when supported by verified measurements and evaluation context.
 - Add your LinkedIn URL to `socials` when available.
 - Add exact employment dates to each role's `period` and confirmed responsibilities to `highlights`.
 - Add verified live URLs to each project's `url` and repository URLs to `source`. Empty links are hidden.
-- Project visuals are original illustrative artwork, not application screenshots. No benchmark results or clinical validation are asserted.
+- Farmer RAG Agent uses the supplied application screenshot at `assets/farmer-rag-agent.jpeg` in its cards and detail view. Other project visuals are original illustrations. No benchmark results or clinical validation are asserted.
 - `featured: true` selects a project for the Summary tab.
 - Filters show all projects or match the project's `category`: `Computer Vision` or `Language AI`.
 - Edit `index.html` to change the main headlines and sharing metadata. Edit `assets/styles.css` for styling.

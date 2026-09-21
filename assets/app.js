@@ -99,6 +99,9 @@
 
   // Lightweight original illustrations, rendered locally without image services.
   function artwork(project, number, dialog = false) {
+    if (project.image) {
+      return `<span class="project-art project-screenshot${dialog ? " dialog-visual" : ""}"><img src="${escapeHTML(project.image)}" alt="${escapeHTML(project.imageAlt || project.name)}" width="803" height="708" loading="${dialog ? "eager" : "lazy"}"/>${dialog ? "" : `<span class="project-arrow">${icon("up-right")}</span>`}</span>`;
+    }
     let visual = "";
     switch (project.visual) {
       case "farmer":
@@ -180,7 +183,6 @@
       return `<div class="tag-list">${tags(project.tags)}</div>${[["The challenge", project.challenge], ["The approach", project.approach], ["Focus areas", project.focus]].filter(([, text]) => text).map(([title, text]) => `<section class="case-section"><h3>${title}</h3><p>${escapeHTML(text)}</p></section>`).join("")}`;
     }
     return `
-      <section class="case-role" aria-label="Your Role"><span class="eyebrow">Your Role</span><strong>${escapeHTML(study.role)}</strong></section>
       <section class="case-section"><h3>Engineering Outcomes</h3>
         <ul class="engineering-outcomes">${study.outcomes.map((outcome) => `<li><strong>${escapeHTML(outcome.title)}:</strong> ${escapeHTML(outcome.detail)}</li>`).join("")}</ul>
       </section>
