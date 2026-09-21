@@ -21,7 +21,8 @@ Visit `http://127.0.0.1:8000`. If Python is not on your PATH, opening the HTML f
 Edit **`assets/content.js`** to change your profile, skills, projects, experience, email, and social links.
 
 - Your three selected GitHub projects, four roles, GitHub profile, and email are already included.
-- Projects: [Farmer RAG Agent](https://github.com/timijaycr7/farmer-rag-agent), [Speech-to-Text AI](https://github.com/timijaycr7/speech-to-text-ai), and [Malaria Parasite Classification & Stage Detection](https://github.com/timijaycr7/Malaria-Parasite-Classification-Stage-Detection). Descriptions reflect their documentation and implementation; each project dialog links to its source repository.
+- Projects: [Farmer RAG Agent](https://github.com/timijaycr7/farmer-rag-agent), [Speech-to-Text AI](https://github.com/timijaycr7/speech-to-text-ai), and [Malaria Parasite Classification & Stage Detection](https://github.com/timijaycr7/Malaria-Parasite-Classification-Stage-Detection). Descriptions combine repository review with owner-provided case-study details; each project dialog links to its source repository.
+- The Farmer RAG Agent's `caseStudy` contains the role, impact, problem, solution, architecture, contributions, and evaluation criteria. Its portfolio text uses OpenAI as requested. Set a metric's `value` only when a verified result and its benchmark context are available; `null` displays as “Not reported.”
 - Add your LinkedIn URL to `socials` when available.
 - Add exact employment dates to each role's `period` and confirmed responsibilities to `highlights`.
 - Add verified live URLs to each project's `url` and repository URLs to `source`. Empty links are hidden.

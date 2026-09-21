@@ -174,13 +174,35 @@
       document.body.style.overflow = $("dialog[open]") ? "hidden" : "";
     });
   });
+  function caseStudyContent(project) {
+    const study = project.caseStudy;
+    if (!study) {
+      return `<div class="tag-list">${tags(project.tags)}</div>${[["The challenge", project.challenge], ["The approach", project.approach], ["Focus areas", project.focus]].filter(([, text]) => text).map(([title, text]) => `<section class="case-section"><h3>${title}</h3><p>${escapeHTML(text)}</p></section>`).join("")}`;
+    }
+    return `
+      <section class="case-role" aria-label="Your Role"><span class="eyebrow">Your Role</span><strong>${escapeHTML(study.role)}</strong></section>
+      <section class="case-section"><h3>Key Results / Impact</h3><p>${escapeHTML(study.impact)}</p>
+        <dl class="case-metrics">${study.metrics.map((metric) => `<div><dt>${escapeHTML(metric.label)}</dt><dd>${escapeHTML(metric.value ?? "Not reported")}</dd></div>`).join("")}</dl>
+        <p class="case-results-note">${escapeHTML(study.resultsNote)}</p>
+      </section>
+      <section class="case-section"><h3>Tech Stack</h3><div class="tag-list">${tags(project.tags)}</div></section>
+      <section class="case-section"><h3>Problem</h3><p>${escapeHTML(study.problem)}</p></section>
+      <section class="case-section"><h3>Solution</h3><p>${escapeHTML(study.solution)}</p></section>
+      <section class="case-section"><h3>Architecture</h3><p>From a farming question to an answer grounded in retrieved knowledge.</p>
+        <ol class="architecture-flow" aria-label="RAG system architecture">${study.architecture.map((step, index) => `<li><span class="architecture-number" aria-hidden="true">${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHTML(step.title)}</strong><p>${escapeHTML(step.detail)}</p></div></li>`).join("")}</ol>
+      </section>
+      <section class="case-section"><h3>My Contribution</h3><ul class="case-contributions">${study.contributions.map((item) => `<li>${escapeHTML(item)}</li>`).join("")}</ul></section>
+      <section class="case-section"><h3>Evaluation &amp; Results</h3><p>${escapeHTML(study.evaluationIntro)}</p>
+        <dl class="evaluation-criteria">${study.evaluation.map((item) => `<div><dt>${escapeHTML(item.title)}</dt><dd>${escapeHTML(item.detail)}</dd></div>`).join("")}</dl>
+      </section>`;
+  }
   document.addEventListener("click", (event) => {
     const trigger = event.target.closest("[data-project]");
     if (!trigger) return;
     const project = data.projects.find((item) => item.id === trigger.dataset.project);
     if (!project) return;
     const links = externalLink(project.url, "View live project", "button button-dark") + externalLink(project.source, "View source", "button button-outline");
-    $("#project-dialog-content").innerHTML = `${artwork(project, data.projects.indexOf(project) + 1, true)}<div class="dialog-content"><p class="eyebrow">${escapeHTML(project.type)}${project.year ? ` / ${escapeHTML(project.year)}` : ""}</p><h2 id="dialog-title">${escapeHTML(project.name)}</h2><p>${escapeHTML(project.description)}</p><div class="tag-list">${tags(project.tags)}</div>${[["The challenge", project.challenge], ["The approach", project.approach], ["Focus areas", project.focus]].filter(([, text]) => text).map(([title, text]) => `<section class="case-section"><h3>${title}</h3><p>${escapeHTML(text)}</p></section>`).join("")}${links ? `<div class="dialog-actions">${links}</div>` : ""}</div>`;
+    $("#project-dialog-content").innerHTML = `${artwork(project, data.projects.indexOf(project) + 1, true)}<div class="dialog-content"><p class="eyebrow">${escapeHTML(project.type)}${project.year ? ` / ${escapeHTML(project.year)}` : ""}</p><h2 id="dialog-title">${escapeHTML(project.name)}</h2><p>${escapeHTML(project.description)}</p>${caseStudyContent(project)}${links ? `<div class="dialog-actions">${links}</div>` : ""}</div>`;
     openDialog($("#project-dialog"));
   });
 
