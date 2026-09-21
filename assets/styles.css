@@ -1,4 +1,72 @@
 @charset "UTF-8";
+/* Agricultural retrieval assistant project illustration. */
+.preview-farmer {
+  background: #e8eddd;
+  color: #48603c;
+}
+.preview-farmer .art-project-label,
+.preview-farmer .project-number {
+  color: #657d51;
+  z-index: 2;
+}
+.farmer-heading {
+  position: absolute;
+  top: 59px;
+  left: 28px;
+  z-index: 2;
+  font-size: clamp(22px, 2.2vw, 32px);
+  line-height: 1.1;
+  letter-spacing: -1.1px;
+}
+.farmer-heading em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+.farmer-fields {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .9;
+}
+.farmer-retrieval {
+  position: absolute;
+  left: 28px;
+  bottom: 47px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border: 1px solid #bacaa6;
+  border-radius: 7px;
+  background: #f9fbf0;
+  box-shadow: 0 8px 20px #4c663012;
+  transform: rotate(-3deg);
+  font: 8px var(--mono);
+  letter-spacing: .6px;
+}
+.farmer-retrieval b {
+  font-weight: 400;
+  margin: 0 4px;
+  color: #88a06e;
+}
+.farmer-retrieval .icon {
+  width: 17px;
+  height: 17px;
+}
+@media(max-width:600px) {
+  .farmer-heading {
+    font-size: 25px;
+    left: 24px;
+  }
+  .farmer-retrieval {
+    left: 24px;
+    padding: 11px 12px;
+    gap: 8px;
+    font-size: 7px;
+  }
+}
 :root {
   color-scheme:light;
   --bg:#f7f8f2;

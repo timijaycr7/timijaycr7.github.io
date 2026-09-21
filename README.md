@@ -20,13 +20,14 @@ Visit `http://127.0.0.1:8000`. If Python is not on your PATH, opening the HTML f
 
 Edit **`assets/content.js`** to change your profile, skills, projects, experience, email, and social links.
 
-- Your seven projects, four roles, GitHub profile, and email are already included.
+- Your three selected GitHub projects, four roles, GitHub profile, and email are already included.
+- Projects: [Farmer RAG Agent](https://github.com/timijaycr7/farmer-rag-agent), [Speech-to-Text AI](https://github.com/timijaycr7/speech-to-text-ai), and [Malaria Parasite Classification & Stage Detection](https://github.com/timijaycr7/Malaria-Parasite-Classification-Stage-Detection). Descriptions reflect their documentation and implementation; each project dialog links to its source repository.
 - Add your LinkedIn URL to `socials` when available.
 - Add exact employment dates to each role's `period` and confirmed responsibilities to `highlights`.
 - Add verified live URLs to each project's `url` and repository URLs to `source`. Empty links are hidden.
 - Project visuals are original illustrative artwork, not application screenshots. No benchmark results or clinical validation are asserted.
 - `featured: true` selects a project for the Summary tab.
-- The four filters match each project's `category`: `Computer Vision`, `Language AI`, or `Automation`.
+- Filters show all projects or match the project's `category`: `Computer Vision` or `Language AI`.
 - Edit `index.html` to change the main headlines and sharing metadata. Edit `assets/styles.css` for styling.
 
 The site includes keyboard-accessible tabs, browser Back/Forward navigation, shareable `#skills`, `#projects`, and `#experience` URLs, project filters, project detail dialogs, contact links, a copy-email button, saved theme selection, and reduced-motion support. All assets are local; no analytics or external font services are used.
