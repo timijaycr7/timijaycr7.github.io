@@ -12,25 +12,10 @@
 }
 .case-role .eyebrow { font-size: 9px; color: var(--muted); }
 .case-role strong { font-size: 14px; font-weight: 600; }
-.case-metrics {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  margin: 19px 0 15px;
-}
-.case-metrics > div {
-  padding: 15px 13px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-}
-.case-metrics dt { font-size: 10px; color: var(--muted); line-height: 1.6; }
-.case-metrics dd { font: 11px/1.6 var(--mono); margin: 9px 0 0; color: var(--ink); }
-.case-section .case-results-note {
-  font-size: 11px;
-  padding-left: 12px;
-  border-left: 2px solid var(--accent-dark);
-}
+.engineering-outcomes { padding-left: 18px; margin: 15px 0 0; }
+.engineering-outcomes li { padding-left: 4px; margin: 11px 0; font-size: 12px; line-height: 1.85; color: var(--muted); }
+.engineering-outcomes li::marker { color: var(--accent-dark); }
+.engineering-outcomes strong { color: var(--ink); font-weight: 600; }
 .architecture-flow {
   list-style: none;
   padding: 0;
@@ -83,7 +68,6 @@
 .evaluation-criteria dt { font-size: 12px; font-weight: 600; }
 .evaluation-criteria dd { margin: 5px 0 0; color: var(--muted); font-size: 11px; line-height: 1.85; }
 @media(max-width:600px) {
-  .case-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .case-role { padding: 15px; }
   .case-role strong { font-size: 12px; }
   .case-role .eyebrow { font-size: 8px; }

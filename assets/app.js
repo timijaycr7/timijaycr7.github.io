@@ -181,9 +181,8 @@
     }
     return `
       <section class="case-role" aria-label="Your Role"><span class="eyebrow">Your Role</span><strong>${escapeHTML(study.role)}</strong></section>
-      <section class="case-section"><h3>Key Results / Impact</h3><p>${escapeHTML(study.impact)}</p>
-        <dl class="case-metrics">${study.metrics.map((metric) => `<div><dt>${escapeHTML(metric.label)}</dt><dd>${escapeHTML(metric.value ?? "Not reported")}</dd></div>`).join("")}</dl>
-        <p class="case-results-note">${escapeHTML(study.resultsNote)}</p>
+      <section class="case-section"><h3>Engineering Outcomes</h3>
+        <ul class="engineering-outcomes">${study.outcomes.map((outcome) => `<li><strong>${escapeHTML(outcome.title)}:</strong> ${escapeHTML(outcome.detail)}</li>`).join("")}</ul>
       </section>
       <section class="case-section"><h3>Tech Stack</h3><div class="tag-list">${tags(project.tags)}</div></section>
       <section class="case-section"><h3>Problem</h3><p>${escapeHTML(study.problem)}</p></section>
