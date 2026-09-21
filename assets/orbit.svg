@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="540" viewBox="0 0 540 540" fill="none">
+  <defs>
+    <radialGradient id="body" cx=".28" cy=".2" r=".83"><stop stop-color="#b4d49c"/><stop offset=".3" stop-color="#6b926b"/><stop offset=".66" stop-color="#2e5941"/><stop offset="1" stop-color="#173b2d"/></radialGradient>
+    <linearGradient id="rib" x1="150" y1="95" x2="368" y2="423" gradientUnits="userSpaceOnUse"><stop stop-color="#cee6b4"/><stop offset=".38" stop-color="#739a6b"/><stop offset=".72" stop-color="#2c5639"/><stop offset="1" stop-color="#143024"/></linearGradient>
+    <linearGradient id="ring" x1="85" y1="217" x2="452" y2="356" gradientUnits="userSpaceOnUse"><stop stop-color="#e7fcbd"/><stop offset=".35" stop-color="#c6ed8a"/><stop offset=".74" stop-color="#8bb75a"/><stop offset="1" stop-color="#d8f5a5"/></linearGradient>
+    <linearGradient id="edge" x1="100" y1="200" x2="470" y2="330" gradientUnits="userSpaceOnUse"><stop stop-color="#f2ffd2"/><stop offset="1" stop-color="#9bc765"/></linearGradient>
+    <filter id="shadow" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="soft" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="2"/></filter>
+    <clipPath id="sphereClip"><circle cx="271" cy="259" r="141"/></clipPath>
+  </defs>
+  <ellipse cx="285" cy="455" rx="119" ry="16" fill="#203b29" opacity=".13" filter="url(#shadow)"/>
+  <g transform="rotate(-28 270 270)">
+    <ellipse cx="270" cy="271" rx="211" ry="61" stroke="#517735" stroke-width="22"/>
+    <circle cx="271" cy="259" r="141" fill="url(#body)"/>
+    <g clip-path="url(#sphereClip)" stroke="url(#rib)" stroke-width="9">
+      <ellipse cx="271" cy="259" rx="12" ry="141"/><ellipse cx="271" cy="259" rx="35" ry="141"/><ellipse cx="271" cy="259" rx="60" ry="141"/><ellipse cx="271" cy="259" rx="83" ry="141"/><ellipse cx="271" cy="259" rx="106" ry="141"/><ellipse cx="271" cy="259" rx="126" ry="141"/><ellipse cx="271" cy="259" rx="140" ry="141"/>
+    </g>
+    <path d="M59 271c0 34 94 61 211 61s211-27 211-61" stroke="#8db25f" stroke-width="23"/>
+    <path d="M59 266c0 34 94 61 211 61s211-27 211-61" stroke="url(#ring)" stroke-width="22"/>
+    <path d="M49 266c0 40 99 72 221 72s221-32 221-72" stroke="url(#edge)" stroke-width="2"/>
+    <path d="M71 266c0 28 89 51 199 51s199-23 199-51" stroke="#e2fbb5" stroke-opacity=".5" stroke-width="2"/>
+  </g>
+  <circle cx="420" cy="113" r="14" fill="#d3edab"/><circle cx="110" cy="383" r="7" fill="#638866"/>
+</svg>
