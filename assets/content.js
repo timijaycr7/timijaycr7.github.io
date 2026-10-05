@@ -9,7 +9,7 @@ window.PORTFOLIO = {
   location: "Working at the intersection of research & engineering",
   intro: "I’m Timilehin, an AI & Machine Learning Engineer focused on transforming data and emerging technologies into practical, scalable solutions across computer vision, LLMs, NLP, and intelligent automation.",
   philosophy: "Curiosity drives the research. Engineering makes it useful. I connect machine learning, thoughtful experimentation, and practical deployment to build systems that solve real problems.",
-  learning: "Multimodal AI, large language models & production machine learning",
+  learning: "Agentic AI Engineering, large language models & production machine learning",
   email: "rayesomotimilehin@gmail.com",
   socials: [
     { label: "GitHub", url: "https://github.com/timijaycr7" },
@@ -17,9 +17,42 @@ window.PORTFOLIO = {
     // { label: "LinkedIn", url: "https://www.linkedin.com/in/YOUR_USERNAME/" },
   ],
   skills: [
-    { title: "Machine learning", subtitle: "Finding patterns. Building intelligence.", icon: "spark", number: "01", tags: ["Machine Learning", "Deep Learning", "NLP", "Computer Vision", "LLM Fine-Tuning", "PyTorch", "TensorFlow", "Scikit-learn"], note: "From an idea to a trained model." },
-    { title: "AI engineering", subtitle: "Taking models beyond the notebook.", icon: "code", number: "02", tags: ["Python", "FastAPI", "Docker", "AWS", "Git / GitHub", "Model deployment", "Faster-Whisper"], note: "Built to work in the real world." },
-    { title: "Data & automation", subtitle: "Connecting information to action.", icon: "layers", number: "03", tags: ["Data Engineering", "Pandas", "BeautifulSoup", "ETL pipelines", "Power Automate", "SharePoint", "Microsoft Forms"], note: "Less repetition. More possibility." },
+    {
+      title: "Python & machine learning", subtitle: "Turning data into models and insight.",
+      icon: "code", number: "01",
+      tags: ["Python", "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "PyTorch", "Machine Learning", "Deep Learning", "Computer Vision"],
+      note: "From an idea to a trained model.",
+    },
+    {
+      title: "NLP & language", subtitle: "Making language useful to intelligent systems.",
+      icon: "spark", number: "02",
+      tags: ["NLP", "Text Classification", "Sentiment Analysis", "Summarization", "Concept Extraction", "Named Entity Recognition (NER)", "Embedding Vectors", "Faster-Whisper"],
+      note: "Understand text. Extract meaning.",
+    },
+    {
+      title: "LLMs & MLOps", subtitle: "Taking intelligent systems into production.",
+      icon: "layers", number: "03",
+      tags: ["LLM Fine-Tuning", "Prompt Engineering", "RAG", "OpenAI", "LangChain", "Airflow", "Kubeflow", "Model & API Deployment", "FastAPI", "ML Pipelines", "CI/CD", "MLflow", "Model Monitoring"],
+      note: "Build, deploy, evaluate, and improve.",
+    },
+    {
+      title: "Cloud & infrastructure", subtitle: "The foundations for scalable AI applications.",
+      icon: "code", number: "04",
+      tags: ["AWS", "Amazon SageMaker", "Amazon Bedrock", "GCP", "Docker", "Azure", "Hugging Face", "Git / GitHub", "GitHub Actions"],
+      note: "From local experiments to cloud services.",
+    },
+    {
+      title: "Data & databases", subtitle: "Collecting, preparing, and organizing information.",
+      icon: "layers", number: "05",
+      tags: ["PostgreSQL", "MongoDB", "BigQuery", "Data Engineering", "BeautifulSoup", "ETL Pipelines"],
+      note: "Reliable data for the next step.",
+    },
+    {
+      title: "Automation & orchestration", subtitle: "Connecting tools and streamlining workflows.",
+      icon: "spark", number: "06",
+      tags: ["n8n", "Zapier", "Workflow Automation", "API Integration", "Power Automate", "SharePoint", "Microsoft Forms"],
+      note: "Less repetition. More possibility.",
+    },
   ],
   // Projects can use an uploaded screenshot or an original illustration.
   projects: [
