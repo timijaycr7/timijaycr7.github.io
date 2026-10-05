@@ -126,7 +126,7 @@ window.PORTFOLIO = {
       url: "", source: "https://github.com/timijaycr7/Malaria-Parasite-Classification-Stage-Detection",
     },
   ],
-  experienceIntro: "My experience spans production ML pipelines, NLP, computer vision, and AI-driven energy analytics — turning data into practical systems and measurable improvements.",
+  experienceIntro: "I build scalable AI systems across machine learning, NLP, computer vision, Generative AI, RAG, and MLOps, transforming data into reliable solutions with measurable impact.",
   // Experience and achievements supplied in the owner's CV screenshots.
   experience: [
     {
