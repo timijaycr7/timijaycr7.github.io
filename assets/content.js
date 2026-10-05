@@ -14,7 +14,8 @@ window.PORTFOLIO = {
   socials: [
     { label: "GitHub", url: "https://github.com/timijaycr7" },
     { label: "WhatsApp · +234 810 660 8611", url: "https://wa.me/2348106608611" },
-    // { label: "LinkedIn", url: "https://www.linkedin.com/in/YOUR_USERNAME/" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/rayesomotl/" },
+    { label: "X (Twitter)", url: "https://x.com/Rayesomotimi" },
   ],
   skills: [
     {

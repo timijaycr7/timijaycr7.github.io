@@ -1027,6 +1027,7 @@ h2 {
 
 .footer-links {
   display:flex;
+  flex-wrap:wrap;
   gap:19px
 }
 
