@@ -7,7 +7,7 @@ window.PORTFOLIO = {
   role: "AI | Machine Learning Engineer",
   availability: "Research. Build. Put intelligence to work.",
   location: "Working at the intersection of research & engineering",
-  intro: "I’m Timilehin, an AI and machine learning engineer. I turn data into intelligent systems — from computer vision and language models to practical, everyday automation.",
+  intro: "I’m Timilehin, an AI & Machine Learning Engineer focused on transforming data and emerging technologies into practical, scalable solutions across computer vision, LLMs, NLP, and intelligent automation.",
   philosophy: "Curiosity drives the research. Engineering makes it useful. I connect machine learning, thoughtful experimentation, and practical deployment to build systems that solve real problems.",
   learning: "Multimodal AI, large language models & production machine learning",
   email: "rayesomotimilehin@gmail.com",
