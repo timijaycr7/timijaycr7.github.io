@@ -132,7 +132,6 @@ window.PORTFOLIO = {
     {
       role: "AI Engineer", company: "Dala Innovation", period: "Jan 2026 — May 2026",
       location: "Akure, Nigeria · Remote", type: "Engineering", current: false,
-      description: "Built ML pipelines, data infrastructure, and NLP systems for application integration.",
       highlights: [
         "Designed and deployed end-to-end ML pipelines, improving workflow efficiency by 50%.",
         "Built scalable ETL data pipelines using Python, BeautifulSoup, and Pandas, reducing data collection time by 70%.",
@@ -145,7 +144,6 @@ window.PORTFOLIO = {
     {
       role: "ML Engineer", company: "Freelancing", period: "Mar 2022 — Present",
       location: "Akure, Nigeria · Remote", type: "Independent practice", current: true,
-      description: "Delivered machine learning solutions across credit risk, medical imaging, and document intelligence.",
       highlights: [
         "Developed a risk-based scoring framework to help lenders reduce credit risk and improve farmers’ access to financing.",
         "Developed a deep learning-based medical imaging system for disease classification using X-ray images, achieving an F1-score above 0.90.",
@@ -159,7 +157,6 @@ window.PORTFOLIO = {
     {
       role: "AI Engineer", company: "Energy Data Technology", period: "Nov 2025 — Mar 2026",
       location: "Akure, Nigeria · Remote", type: "Energy analytics", current: false,
-      description: "Developed AI-driven analytics, fraud detection, and forecasting systems for energy utilities.",
       highlights: [
         "Led development of AI-driven analytics systems for energy utilities, improving operational efficiency and data-driven monitoring of power infrastructure using Python, Pandas, NumPy, and Scikit-learn.",
         "Designed and implemented machine learning models for power theft detection, identifying abnormal consumption patterns and non-technical losses in grid datasets using PyTorch, Scikit-learn, and anomaly detection.",
