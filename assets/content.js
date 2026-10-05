@@ -28,7 +28,7 @@ window.PORTFOLIO = {
       category: "Language AI", type: "Agricultural AI assistant", visual: "farmer",
       image: "./assets/farmer-rag-agent.jpeg",
       imageAlt: "Farmer RAG Agent chat interface answering agricultural questions about livestock management.",
-      tags: ["LangGraph", "FAISS", "Hugging Face", "Groq", "FastAPI", "RAGAS", "Python"], featured: true,
+      tags: ["LangGraph", "FAISS", "Hugging Face", "Groq", "FastAPI", "RAGAS", "Python"],
       description: "An AI-powered agricultural assistant that retrieves trusted farming knowledge and generates context-aware answers.",
       caseStudy: {
         outcomes: [
@@ -72,7 +72,7 @@ window.PORTFOLIO = {
       id: "speech", name: "Speech-to-Text AI",
       subtitle: "From audio uploads to timestamped transcripts.",
       category: "Language AI", type: "Speech & cloud engineering", visual: "speech",
-      tags: ["Faster-Whisper", "FastAPI", "Amazon S3", "Amazon SQS", "Docker"], featured: true,
+      tags: ["Faster-Whisper", "FastAPI", "Amazon S3", "Amazon SQS", "Docker"],
       description: "A speech transcription API with immediate transcription and asynchronous job processing, powered by Faster-Whisper.",
       challenge: "Support both direct audio transcription and queued background jobs while validating uploads and returning structured results.",
       approach: "FastAPI accepts audio files and returns transcript text, detected language, duration, and timestamped segments. The asynchronous path stores audio in Amazon S3, queues jobs through Amazon SQS, and uses a worker to transcribe audio and save results. The repository includes Docker packaging, automated tests, and CI configuration.",
@@ -83,7 +83,7 @@ window.PORTFOLIO = {
       id: "malaria", name: "Malaria Parasite Classification & Stage Detection",
       subtitle: "Exploring parasite species, stages, and localization.",
       category: "Computer Vision", type: "Medical imaging research", visual: "malaria",
-      tags: ["ResNet", "Random Forest", "XGBoost", "HOG", "Computer Vision"], featured: false,
+      tags: ["ResNet", "Random Forest", "XGBoost", "HOG", "Computer Vision"],
       description: "A malaria microscopy research project exploring a hierarchical workflow: classify parasite species first, then detect infection stages and parasite locations.",
       challenge: "Study species classification in stained blood-smear images and compare deep learning with traditional machine learning approaches.",
       approach: "Classification notebooks explore ResNet alongside HOG-based Random Forest and XGBoost models. The README describes a second stage using species-specific Faster R-CNN, RT-DETR, and YOLO detectors for stage identification and localization; the checked-in notebooks focus on classification and deployment experiments.",

@@ -142,7 +142,6 @@
     const number = data.projects.indexOf(project) + 1;
     return `<article class="project-card"><button type="button" class="project-open" data-project="${escapeHTML(project.id)}" aria-label="View project: ${escapeHTML(project.name)}">${artwork(project, number)}<span class="project-meta"><span><span class="project-name">${escapeHTML(project.name)}</span><span class="project-subtitle">${escapeHTML(project.subtitle)}</span></span><span class="project-type">${escapeHTML(project.type)}</span></span></button></article>`;
   }
-  $("#featured-projects").innerHTML = data.projects.filter((project) => project.featured).map(projectCard).join("");
   const renderProjects = (filter = "All") => {
     const projects = data.projects.filter((project) => filter === "All" || project.category === filter);
     $("#all-projects").innerHTML = projects.length ? projects.map(projectCard).join("") : '<p class="empty-state">More projects are on the way.</p>';

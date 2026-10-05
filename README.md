@@ -27,7 +27,7 @@ Edit **`assets/content.js`** to change your profile, skills, projects, experienc
 - Add exact employment dates to each role's `period` and confirmed responsibilities to `highlights`.
 - Add verified live URLs to each project's `url` and repository URLs to `source`. Empty links are hidden.
 - Farmer RAG Agent uses the supplied application screenshot at `assets/farmer-rag-agent.jpeg` in its cards and detail view. Other project visuals are original illustrations. No benchmark results or clinical validation are asserted.
-- `featured: true` selects a project for the Summary tab.
+- Project cards appear only in the Projects tab. The Summary's “Explore my work” link opens that tab.
 - Filters show all projects or match the project's `category`: `Computer Vision` or `Language AI`.
 - Edit `index.html` to change the main headlines and sharing metadata. Edit `assets/styles.css` for styling.
 
