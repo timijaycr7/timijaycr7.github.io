@@ -8,6 +8,10 @@ Once deployed, edit the content, commit your changes, and push to `main` to upda
 
 ## Preview
 
+For a portable Docker deployment or a package you can send to another computer,
+see [DOCKER.md](DOCKER.md). Quick start: `docker compose up -d --build`, then open
+http://localhost:8080.
+
 Open `index.html` directly in a browser, or run a local server from this directory:
 
 ```sh
