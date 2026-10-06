@@ -30,7 +30,7 @@ Edit **`assets/content.js`** to change your profile, skills, projects, experienc
 - GitHub, WhatsApp, LinkedIn, and X (Twitter) links are configured in `socials` and appear in the contact dialog and footer.
 - Update each role's `period`, `location`, and `highlights` to maintain the experience timeline. Dates and achievements are based on the supplied CV details.
 - Add verified live URLs to each project's `url` and repository URLs to `source`. Empty links are hidden.
-- Farmer RAG Agent uses the supplied application screenshot at `assets/farmer-rag-agent.jpeg` in its cards and detail view. Other project visuals are original illustrations. No benchmark results or clinical validation are asserted.
+- Farmer RAG Agent uses the supplied application screenshot at `assets/farmer-rag-agent.jpeg` in its cards and detail view. Malaria uses the supplied prediction montage and evaluation plots, with owner-provided research results and a non-clinical-use disclaimer. The speech project visual is an original illustration.
 - Project cards appear only in the Projects tab. The Summary's “Explore my work” link opens that tab.
 - Filters show all projects or match the project's `category`: `Computer Vision` or `Language AI`.
 - Edit `index.html` to change the main headlines and sharing metadata. Edit `assets/styles.css` for styling.

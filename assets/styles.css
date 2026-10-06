@@ -4345,3 +4345,13 @@ dialog[open] {
   }
 
 }
+
+/* Research figures retain their original aspect ratio and annotations. */
+.result-gallery { display: grid; gap: 28px; margin-top: 28px; }
+.result-figure { margin: 0; border: 1px solid var(--border-color, #a0aa9a); border-radius: 14px; overflow: hidden; }
+.result-figure img { display: block; width: 100%; height: auto; background: #fff; }
+.result-figure figcaption { padding: 20px; }
+.result-figure figcaption strong { display: block; font-size: 1.05rem; }
+.result-figure figcaption p { margin: 10px 0; }
+.result-figure figcaption a { color: inherit; text-underline-offset: 4px; }
+.research-note { border-left: 3px solid #8eab70; padding: 16px 20px; margin-top: 28px; }

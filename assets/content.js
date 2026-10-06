@@ -126,13 +126,34 @@ window.PORTFOLIO = {
     },
     {
       id: "malaria", name: "Malaria Parasite Classification & Stage Detection",
-      subtitle: "Exploring parasite species, stages, and localization.",
-      category: "Computer Vision", type: "Medical imaging research", visual: "malaria",
-      tags: ["ResNet", "Random Forest", "XGBoost", "HOG", "Computer Vision"],
-      description: "A malaria microscopy research project exploring a hierarchical workflow: classify parasite species first, then detect infection stages and parasite locations.",
-      challenge: "Study species classification in stained blood-smear images and compare deep learning with traditional machine learning approaches.",
-      approach: "Classification notebooks explore ResNet alongside HOG-based Random Forest and XGBoost models. The README describes a second stage using species-specific Faster R-CNN, RT-DETR, and YOLO detectors for stage identification and localization; the checked-in notebooks focus on classification and deployment experiments.",
-      focus: "Microscopy image classification · Feature extraction · Model comparison · Hierarchical detection design",
+      image: "./assets/result%201.png",
+      imageAlt: "Microscopy prediction examples with parasite species labels and developmental-stage bounding boxes",
+      resultFigures: [
+        { image: "./assets/result%201.png", title: "Parasite localization & stage predictions", caption: "Example microscopy predictions showing species labels and bounding boxes for developmental stages. These are research model outputs." },
+        { image: "./assets/result%202.png", title: "Training & validation performance", caption: "Detection training curves showing losses, precision, recall, mAP@50, and mAP@50–95 across epochs. These detection metrics are distinct from species-classification accuracy." },
+        { image: "./assets/result%203.png", title: "F1 score & confidence threshold", caption: "Per-class and combined detection F1 curves. The supplied plot reports a combined F1 of 0.87 at a confidence threshold of 0.436." }
+      ],
+      subtitle: "Species recognition. Stage detection. Microscopy research.",
+      category: "Computer Vision", type: "Medical Imaging · Computer Vision · Deep Learning", visual: "malaria",
+      tags: ["Python", "ResNet", "YOLO", "RT-DETR", "Faster R-CNN", "Random Forest", "XGBoost", "HOG", "OpenCV"],
+      description: "An AI-powered medical imaging research system for identifying malaria parasite species and detecting developmental stages from microscopic blood-smear images.",
+      technologies: "Python · ResNet · YOLO · RT-DETR · Faster R-CNN · Random Forest · XGBoost · HOG · OpenCV",
+      sections: [
+        { title: "The Challenge", paragraphs: ["Manual examination of microscopic blood-smear images can be time-intensive and dependent on specialist expertise. The project explored how machine learning and computer vision could assist this analysis by automatically classifying malaria parasite species and localizing parasite developmental stages within microscopy images."] },
+        { title: "The Approach", paragraphs: [
+          "Developed a hierarchical computer-vision pipeline that first identifies malaria parasite species and then performs stage detection and localization.",
+          "For species classification, deep-learning models including ResNet were evaluated alongside traditional machine-learning approaches using HOG feature extraction with Random Forest and XGBoost classifiers.",
+          "For the detection stage, object-detection architectures including YOLO, RT-DETR, and Faster R-CNN were explored to identify parasite locations and developmental stages within blood-smear images.",
+          "The workflow covered dataset preparation, image preprocessing, feature extraction, model training, comparative evaluation, inference, and visualization of model predictions."
+        ] },
+        { title: "Results", paragraphs: [
+          "Achieved over 90% classification accuracy in parasite-species recognition while demonstrating the potential to substantially reduce the amount of manual image analysis required.",
+          "The experiments also provided a comparative assessment of deep-learning and traditional machine-learning approaches, helping identify suitable architectures for different stages of the microscopy-analysis pipeline."
+        ] },
+        { title: "Focus Areas", paragraphs: ["Medical image analysis · Computer vision · Deep learning · Image classification · Object detection · Feature engineering · Model comparison · Experimental evaluation"] },
+        { title: "Project Outcome", paragraphs: ["Built an end-to-end research pipeline for automated malaria microscopy analysis, combining species classification with parasite-stage detection and localization to support faster and more consistent analysis of microscopic blood images."] }
+      ],
+      researchNote: "Research prototype developed for machine-learning experimentation and decision support; not intended as a standalone clinical diagnostic system.",
       url: "", source: "https://github.com/timijaycr7/Malaria-Parasite-Classification-Stage-Detection",
     },
   ],
