@@ -105,14 +105,24 @@ window.PORTFOLIO = {
     },
     {
       id: "speech", name: "Speech-to-Text AI",
-      subtitle: "From audio uploads to timestamped transcripts.",
-      category: "Language AI", type: "Speech & cloud engineering", visual: "speech",
-      tags: ["Faster-Whisper", "FastAPI", "Amazon S3", "Amazon SQS", "Docker"],
-      description: "A speech transcription API with immediate transcription and asynchronous job processing, powered by Faster-Whisper.",
-      challenge: "Support both direct audio transcription and queued background jobs while validating uploads and returning structured results.",
-      approach: "FastAPI accepts audio files and returns transcript text, detected language, duration, and timestamped segments. The asynchronous path stores audio in Amazon S3, queues jobs through Amazon SQS, and uses a worker to transcribe audio and save results. The repository includes Docker packaging, automated tests, and CI configuration.",
-      focus: "Speech recognition · API development · Asynchronous processing · AWS integration",
-      url: "", source: "https://github.com/timijaycr7/speech-to-text-ai",
+      subtitle: "Cloud-Deployed Speech Recognition & Asynchronous Processing System",
+      category: "Language AI", type: "Machine Learning · Cloud · MLOps", visual: "speech",
+      tags: ["Faster-Whisper", "FastAPI", "Docker", "AWS ECS", "S3", "SQS", "GitHub Actions"],
+      description: "Built and deployed an end-to-end speech-to-text platform powered by Faster-Whisper, supporting both real-time API transcription and scalable asynchronous job processing on AWS.",
+      technologies: "Faster-Whisper · FastAPI · Python · Docker · AWS ECS/Fargate · Amazon ECR · Amazon S3 · Amazon SQS · Application Load Balancer · CloudWatch · GitHub Actions",
+      sections: [
+        { title: "The Challenge", paragraphs: ["Design a reliable speech transcription system capable of handling direct audio requests and longer-running background jobs without blocking the API, while providing structured transcription results and scalable cloud deployment."] },
+        { title: "The Approach", paragraphs: [
+          "Developed a FastAPI-based transcription service using Faster-Whisper for speech recognition, returning transcript text, detected language, duration, and timestamped segments.",
+          "Implemented an asynchronous processing architecture where uploaded audio is stored in Amazon S3, transcription jobs are queued through Amazon SQS, and a dedicated ECS worker processes jobs independently from the API.",
+          "Containerized the API and worker with Docker and deployed both services to AWS ECS using Fargate. Configured an Application Load Balancer, target-group health checks, IAM permissions, and CloudWatch logging for reliable production-style operation.",
+          "Automated testing, Docker builds, image publishing to Amazon ECR, and deployment workflows using GitHub Actions CI/CD."
+        ] },
+        { title: "Key Engineering Highlights", paragraphs: ["Cloud-native ML deployment · REST API development · Asynchronous job processing · Containerization · Message queues · Object storage · Load balancing · IAM & cloud security · Monitoring & logging · CI/CD · MLOps"] },
+        { title: "Result", paragraphs: ["Delivered a working cloud-hosted speech-to-text system that accepts audio, processes transcription jobs asynchronously, and returns structured results through a publicly accessible API."] }
+      ],
+      liveLabel: "View Project", sourceLabel: "GitHub",
+      url: "http://speech-to-text-alb-973824052.eu-west-1.elb.amazonaws.com/docs", source: "https://github.com/timijaycr7/speech-to-text-ai",
     },
     {
       id: "malaria", name: "Malaria Parasite Classification & Stage Detection",

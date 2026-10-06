@@ -177,6 +177,9 @@
     });
   });
   function caseStudyContent(project) {
+    if (project.sections) {
+      return `<p><strong>${escapeHTML(project.subtitle)}</strong></p><section class="case-section"><h3>Technologies</h3><p>${escapeHTML(project.technologies)}</p></section>${project.sections.map((section) => `<section class="case-section"><h3>${escapeHTML(section.title)}</h3>${section.paragraphs.map((paragraph) => `<p>${escapeHTML(paragraph)}</p>`).join("")}</section>`).join("")}`;
+    }
     const study = project.caseStudy;
     if (!study) {
       return `<div class="tag-list">${tags(project.tags)}</div>${[["The challenge", project.challenge], ["The approach", project.approach], ["Focus areas", project.focus]].filter(([, text]) => text).map(([title, text]) => `<section class="case-section"><h3>${title}</h3><p>${escapeHTML(text)}</p></section>`).join("")}`;
@@ -201,7 +204,7 @@
     if (!trigger) return;
     const project = data.projects.find((item) => item.id === trigger.dataset.project);
     if (!project) return;
-    const links = externalLink(project.url, "View live project", "button button-dark") + externalLink(project.source, "View source", "button button-outline");
+    const links = externalLink(project.url, project.liveLabel || "View live project", "button button-dark") + externalLink(project.source, project.sourceLabel || "View source", "button button-outline");
     $("#project-dialog-content").innerHTML = `${artwork(project, data.projects.indexOf(project) + 1, true)}<div class="dialog-content"><p class="eyebrow">${escapeHTML(project.type)}${project.year ? ` / ${escapeHTML(project.year)}` : ""}</p><h2 id="dialog-title">${escapeHTML(project.name)}</h2><p>${escapeHTML(project.description)}</p>${caseStudyContent(project)}${links ? `<div class="dialog-actions">${links}</div>` : ""}</div>`;
     openDialog($("#project-dialog"));
   });
