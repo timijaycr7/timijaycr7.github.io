@@ -4355,3 +4355,12 @@ dialog[open] {
 .result-figure figcaption p { margin: 10px 0; }
 .result-figure figcaption a { color: inherit; text-underline-offset: 4px; }
 .research-note { border-left: 3px solid #8eab70; padding: 16px 20px; margin-top: 28px; }
+
+.credentials-section { margin-top: 64px; padding-top: 40px; border-top: 1px solid #8eab7050; }
+.credentials-section h2 { font-size: clamp(1.8rem, 4vw, 2.7rem); margin: 12px 0 28px; }
+.credentials-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.credential-card { padding: 28px; border: 1px solid #8eab7050; border-radius: 16px; }
+.credential-card h3 { font-size: 1.3rem; line-height: 1.4; margin: 12px 0; }
+.credential-card p { line-height: 1.6; }
+.credential-card .credential-detail { margin-top: 16px; font-weight: 600; }
+@media (max-width: 640px) { .credentials-grid { grid-template-columns: 1fr; } .credential-card { padding: 22px; } }

@@ -210,6 +210,16 @@ window.PORTFOLIO = {
       tags: ["Python", "Machine Learning", "Deep Learning", "NLP", "Technical Instruction", "Mentoring"],
     },
   ],
-  educationTitle: "Build. Research. Share what you learn.",
-  educationDescription: "Engineering, research, and teaching each bring a different perspective to the same work: making AI useful and understandable.",
+  education: [
+    { degree: "MSc in Financial Engineering", institution: "WorldQuant University", period: "Jul 2026 — Jul 2028 (expected)", detail: "In progress" },
+    { degree: "B.Tech. in Quantity Surveying", institution: "Federal University of Technology, Akure", period: "Jan 2020 — Nov 2025", detail: "CGPA: 4.46 / 5.00" }
+  ],
+  certifications: [
+    { title: "Introduction to Data Science", issuer: "DataCamp" },
+    { title: "Advanced Python Programming", issuer: "DataCamp" },
+    { title: "Deep Learning Specialization", issuer: "Coursera · Andrew Ng" },
+    { title: "Machine Learning Specialization", issuer: "Coursera · Andrew Ng" },
+    { title: "Green Digital Skills", issuer: "INCO Academy" },
+    { title: "AI Automation", issuer: "Witty Academy" }
+  ],
 };
