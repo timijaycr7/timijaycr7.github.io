@@ -161,6 +161,18 @@ window.PORTFOLIO = {
   // Experience and achievements supplied in the owner's CV screenshots.
   experience: [
     {
+      role: "AI & Machine Learning Instructor", company: "TechCrush", period: "May 2026 — Aug 2026",
+      location: "Remote · Contract", current: false,
+      highlights: [
+        "Delivered structured instruction in Python, machine learning, deep learning, and natural language processing, supporting learners from beginner to advanced levels.",
+        "Taught Python programming and problem-solving through data structures, functions, object-oriented programming, and debugging.",
+        "Trained learners in data preprocessing, model training and evaluation, neural networks, and optimization through practical machine-learning and deep-learning exercises.",
+        "Guided learners through NLP applications, including text preprocessing, text classification, sentiment analysis, and language-based solutions.",
+        "Mentored students through hands-on projects, coding exercises, and technical troubleshooting to develop practical AI and machine-learning skills."
+      ],
+      tags: ["Python", "Machine Learning", "Deep Learning", "NLP", "Technical Instruction", "Mentoring"],
+    },
+    {
       role: "AI Engineer", company: "Dala Innovation", period: "Jan 2026 — May 2026",
       location: "Akure, Nigeria · Remote", type: "Engineering", current: false,
       highlights: [

@@ -24,7 +24,7 @@ Visit `http://127.0.0.1:8000`. If Python is not on your PATH, opening the HTML f
 
 Edit **`assets/content.js`** to change your profile, skills, projects, experience, email, and social links.
 
-- Your three selected GitHub projects, three CV experience entries, GitHub profile, and email are already included.
+- Your three selected GitHub projects, four experience entries (including your TechCrush instructor role), GitHub profile, and email are already included.
 - Projects: [Farmer RAG Agent](https://github.com/timijaycr7/farmer-rag-agent), [Speech-to-Text AI](https://github.com/timijaycr7/speech-to-text-ai), and [Malaria Parasite Classification & Stage Detection](https://github.com/timijaycr7/Malaria-Parasite-Classification-Stage-Detection). Descriptions combine repository review with owner-provided case-study details; each project dialog links to its source repository.
 - The Farmer RAG Agent's `caseStudy` contains engineering outcomes, problem, solution, architecture, contributions, and evaluation criteria. Its provider is Groq. Engineering outcomes describe implemented capabilities; add benchmark figures only when supported by verified measurements and evaluation context.
 - GitHub, WhatsApp, LinkedIn, and X (Twitter) links are configured in `socials` and appear in the contact dialog and footer.
